@@ -1,0 +1,49 @@
+
+<style type="text/css" media="screen">
+
+
+html {height: 100%;}
+body {height: 100%;}
+table { position: fixed;
+		right: 0px;
+		top: 5px;
+	height: 80%;
+	width: 100%;
+		}
+img {
+	position: relative;
+    width : 50%;
+    left:15%;
+	top:5px;
+}
+tr.colora {color: #af2faf;}
+tr.colorb {color: #8428a8;}
+tr.colorc {color: #492faf;}
+tr.colord {color: #2f46af;}
+tr.colore {color: #2f80af;}
+tr.colorf {color: #2fafa4;}
+tr.colorg {color: #2faf60;}
+		div.S{
+			text-align: center;
+            font-size: 3.1vW;
+            font-size: 5vH;
+			font-style: oblique;
+			
+		}
+		div.m {
+			text-align:right;
+            font-size: 1vW;
+            font-size: 2vH;
+		}
+		div.n {
+			text-align: left;   
+			font-size: 1vW;
+            font-size: 2vH;
+        }
+        td:not(.unseen){
+            width: 5%;
+            margin-left: 0.1%;
+            margin-right: 0.1%;
+            border: 5px solid black;
+        }
+</style>
