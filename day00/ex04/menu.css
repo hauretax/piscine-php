@@ -1,3 +1,4 @@
+<style type="text/css" media="screen">
 div {margin-left: 30%;
     font-family: "Avenir",Arial,sans-serif;}
 ul {
@@ -30,3 +31,4 @@ ul {
     li:hover ul li ul li {float:none;}
     
     li ul {position:absolute;}  
+   </style>
