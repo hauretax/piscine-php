@@ -1,34 +1,31 @@
+div {margin-left: 30%;}
 ul {
     margin: 0px;
     padding: 0px;
     list-style-type:none;
     text-align:center;
     }
-   #menu li {
+   li{
     float:left;
     margin:auto;
     padding:0;
     background-color:black;
     }
-   #menu li a {
+   li  {
     display:block;
     width:100px;
     color:white;
     text-decoration:none;
-    padding:5px;
     }
-   #menu li a:hover {
-    color:#FFD700;
-    }
-    #menu ul li ul {
-        display:none;
-        }
-        #menu ul li:hover ul {
-            display:block;
+   li a:hover {color:#FFD700;
+                display:block
             }
-           #menu li:hover ul li {
-            float:none;
-            }
-            #menu li ul {
-                position:absolute;
-                }
+
+    ul li ul   {display:none;}
+    div ul li:hover ul {display:block;}
+    
+    li ul li ul li{display:none;}
+    div ul li ul li:hover ul li{display: block;}
+    li:hover ul li ul li {float:none;}
+    
+    li ul {position:absolute;}  

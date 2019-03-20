@@ -45,5 +45,30 @@ tr.colorg {color: #2faf60;}
             margin-left: 0.1%;
             margin-right: 0.1%;
             border: 2px solid black;
-        }
+		}
+		@media only screen and (max-width: 1000px) {
+			div.S{
+				text-align: center;
+				font-size: 1.0vW;
+				font-size: 2vH;
+				font-style: oblique;
+				
+			}
+			div.m {
+				text-align:right;
+				font-size: 0.5vW;
+				font-size: 1vH;
+			}
+			div.n {
+				text-align: left;   
+				font-size: 0.5vW;
+				font-size: 1vH;
+			}
+			td:not(.unseen){
+				width: 2.5%;
+				margin-left: 0.05%;
+				margin-right: 0.05%;
+				border: 1px solid black;
+			}	
+		} 
 </style>
