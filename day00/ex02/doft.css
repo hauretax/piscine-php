@@ -108,4 +108,18 @@ span.GROS{
 span.ombre{
     text-shadow: 0.3em 0.3em 0.2em rgb(255, 46, 9);
 }
+div.chaise{
+    position:fixed;
+    top :450px;
+    left : 800px;
+    height: 200px;
+    width: 80px;
+}
+div.mac{
+    position:fixed;
+    top:440px;
+    left:1240px;
+    height: 130px;
+    WIDTH: 175px;
+}
 </style>
