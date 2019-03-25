@@ -13,5 +13,6 @@ foreach ($tmp as $elem)
         echo "$elem ";
     $e = 2;
 }
-echo "$tmp[0]\n"
+if ($argc != 1)
+    echo "$tmp[0]\n"
 ?>

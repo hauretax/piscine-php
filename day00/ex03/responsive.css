@@ -31,6 +31,7 @@ tr.colorg {color: #2faf60;}
 			
 		}
 		div.m {
+			contentEditable = true;
 			text-align:right;
             font-size: 1vW;
             font-size: 2vH;

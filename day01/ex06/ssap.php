@@ -16,10 +16,9 @@
         }
         $e = $e + 1;
     }
-    asort ($tab);
+    arsort ($tab);
     foreach ($tab as $elem)
     {
             echo "$elem\n";
     }
-
 ?>
