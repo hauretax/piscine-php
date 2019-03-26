@@ -8,7 +8,7 @@
         {
             while(strstr($elem,"  "))
                 $elem=str_replace ("  "," ",$elem);
-            $tmp = explode(" ", $elem);
+            $tmp = explode(" ", trim($elem));
             foreach ($tmp as $quatr)
             {
                 array_push ($tab, $quatr);
