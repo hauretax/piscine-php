@@ -2,7 +2,7 @@
 function ft_is_sort($tab)
 {
     $tmp = $tab;
-    asort($tmp);
+    sort($tmp);
     $i = 0;
     foreach($tmp as $elem)
     {
