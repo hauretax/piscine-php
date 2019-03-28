@@ -1,4 +1,4 @@
 <?PHP
-header ("Content-Type:texte/plaine");
+header("Content-Type:text/plain");
 ?>
 <html><body>Hello</body></html>
