@@ -44,6 +44,7 @@
         }
         $e = $e + 1;
     }
+    sort($tab);
     $i = 0;
     $size = sizeof ($tab);
     while($i < $size - 1)
