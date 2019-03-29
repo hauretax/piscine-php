@@ -1,21 +1,30 @@
 <?PHP
         if ($_POST['login'] !== "" && $_POST['passwd'] !== "" && $_POST['submit'] === "OK")
         {
+                $tab = array();
                 if(file_exists("../private/passwd"))
                 {
-                        echo "coucoule fichier etais cree";
+                        $tab = unserialize(file_get_contents('../private/passwd'));
+                        foreach ($tab as $elem)
+                        {
+                                if ($elem['login'] === $_POST['login'])
+                                {
+                                        print ("ERROR\n");
+                                        exit;
+                                }
+                        }
+                        $tab[]=$_POST;
+                        file_put_contents ('../private/passwd', serialize ($tab));
                 }
                 else
                 {
-                        echo('creation du fichier');
                         mkdir("../private");
+                        $_POST['passwd'] = hash ('whirlpool',$_POST['passwd']);
+                        $tab[]=$_POST;
+                        file_put_contents ('../private/passwd', serialize ($tab));
                 }
-               // $str =  serialize($_POST);
-               // print ($str);
-               // $str_ = unserialize($str);
-                //print_r ($str_);
-                //echo ('OK');
+                print ("OK\n");
         }
         else
-                echo ('ERROR');
+                print ("ERROR\n");
 ?>
