@@ -11,17 +11,16 @@
                                 {
                                         $tab[$key]['passwd'] = hash ('whirlpool',$_POST['newpw']);
                                         file_put_contents ('../private/passwd', serialize ($tab));
-                                        print("OK\n");
+                                        echo "OK\n";
                                         exit;
                                 }
                                 else
                                 {
-                                        print("ERROR\n");
+                                        echo "ERROR\n";
                                         exit;
                                 }
                         }
                 }
         }
-        else
                 print ("ERROR\n");
 ?>

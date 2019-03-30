@@ -9,22 +9,23 @@
                         {
                                 if ($elem['login'] === $_POST['login'])
                                 {
-                                        print ("ERROR\n");
+                                        echo "ERROR\n";
                                         exit;
                                 }
                         }
+                        $_POST['passwd'] = hash ('whirlpool', $_POST['passwd']);
                         $tab[]=$_POST;
                         file_put_contents ('../private/passwd', serialize ($tab));
                 }
                 else
                 {
-                        mkdir("../private");
+                        mkdir("../private", 0777, true);
                         $_POST['passwd'] = hash ('whirlpool',$_POST['passwd']);
                         $tab[]=$_POST;
                         file_put_contents ('../private/passwd', serialize ($tab));
                 }
-                print ("OK\n");
+                echo "OK\n";
         }
         else
-                print ("ERROR\n");
+                echo "ERROR\n";
 ?>
