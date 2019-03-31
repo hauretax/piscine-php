@@ -1,0 +1,63 @@
+< style type = "text/css" media="screen">
+html{
+    height: 100%;
+    width: 100%;
+}
+
+
+ul {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+    }
+
+
+div.top{ position: fixed;
+    right: 10px;
+    top: 0px;}
+body{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+div.scroll{
+    width: 750px;
+    overflow:scroll; 
+    border:#000000 1px solid;
+}
+header{
+    margin: 0 auto;
+    position:fixed;
+    background-image:url(https://iderco.files.wordpress.com/2012/09/2959-petits-cailloux-wallfizz.jpg);
+    background-size:750px 300px;
+    height: 200px;
+    width: 750px;
+
+}
+h1{
+    font-size: 50px;
+    height: 200px;
+    width: 750px;
+    margin:0px;
+    margin-block-start:0px;
+    margin-block-end: 0px;
+    top: -25px;
+    position:fixed;
+    color: #fff;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+}
+div.tab{
+    margin-top:200px;
+    width: 750px;
+    display: flex;
+    justify-content: space-around;
+}
+div.case{
+    text-align: center;
+    width: 100%;
+    border: 5px solid black;
+}
+</style>
