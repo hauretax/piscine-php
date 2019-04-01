@@ -49,13 +49,16 @@ h1{
     font-family: 'Courgette', cursive;
     text-align: center;
 }
+div.all_article{
+    display: flex;
+}
 div.tab{
     margin-top:200px;
     width: 750px;
     display: flex;
     justify-content: space-around;
 }
-div.case{
+a.case{
     text-align: center;
     width: 100%;
     border: 5px solid black;

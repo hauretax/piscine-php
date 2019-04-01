@@ -5,7 +5,7 @@ echo "[" . $_SESSION['error'] . "]";
 $_SESSION['error'] = '';
 ?>
 
-<p>oiiiio</p>
+<p>test</p>
 <form method="POST" action="../action/login.php">
 	Pseudo: <input type="text" name="login"><br/>
 	Mot de passe <input type="password" name="passwd"><br/>
