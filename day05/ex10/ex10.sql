@@ -1,0 +1,1 @@
+SELECT title AS "TITLE", summary as "Summary", prod_year FROM film INNER JOIN genre ON film.id_genre = genre.id_genre WHERE name LIKE 'war' ORDER BY YEAR(release_date) DESC;
