@@ -1,15 +1,15 @@
 <?php
-    class UnholyFactory{
-        private $tab;
-        absorb($a)
-        if (is_a($a, "Ifighter")){
-            if (!(in_array($a, $this->tab))){
-                $this->tab[] = $a
-                print "(Factory absorbed a fighter of type foot soldier";
-                $this->
-                print ")";
-            }
+class UnholyFactory{
+    private $tab;
+ 
+    function absorb($a){
+        if (is_a($a, "Fighter")){
+            print "(Factory absorbed a fighter of type ";
+            print ($a->getType() .")\n");
         }
-
+        else{
+            print "(is not a soldier)";
+        }
     }
+}
 ?>

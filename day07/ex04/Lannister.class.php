@@ -2,10 +2,10 @@
 class Lannister{
     public function sleepWith($a){
         if (is_a($a, "Sansa")){
-            print ("Let's do this.\n");
+            print ("Let's do this.". PHP_EOL);
         }
         else
-        print ("Not even if I'm drunk !\n");
+        print ("Not even if I'm drunk !". PHP_EOL);
     }
 }
 ?>
