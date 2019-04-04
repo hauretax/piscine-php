@@ -7,16 +7,35 @@
         height: 200px;
         border-radius: 100%;
     }
-
 </style>
-<html>
-    <body>
-        <div id = "ballon"></div>
-        <script>
-            var tab = new Array('test1', 'test2', 'clafoutie');
-            for (t in tab){
-                console.debug(tab[t]);
-            }
-        </script>
-    </body>
+
+    <html>
+        <body>
+                <div id='ballon' onclick="size+=10; change_size(); rotate_color();" onmouseout="outtodiv();">
+                        <script>
+                var size=200;
+                var i = 0;
+                var tab = new Array ('red', 'green', 'blue');
+                function change_size()  {
+                    if (size > 420)
+                         size = 200;
+                    document.getElementById('ballon').style.width = size+"px";
+                    document.getElementById('ballon').style.height = size+"px";
+                    i += 1;
+                    if (i == 3)
+                        i = 0;
+                    document.getElementById('ballon').style.backgroundColor = tab[i];
+                }
+                function outtodiv() {
+                    if (size > 200)
+                        size -= 5;
+                    document.getElementById('ballon').style.width = size+"px";
+                    document.getElementById('ballon').style.height = size+"px";
+                    i -= 1;
+                    if (i == -1)
+                        i = 2;
+                        document.getElementById('ballon').style.backgroundColor = tab[i];
+                }
+            </script>
+</body>
 </html>
