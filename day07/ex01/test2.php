@@ -8,4 +8,3 @@ print($euron->familyMotto . PHP_EOL);
 
 ?>
 
-

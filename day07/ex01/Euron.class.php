@@ -9,4 +9,3 @@ class Euron extends Greyjoy {
 }
 
 ?>
-

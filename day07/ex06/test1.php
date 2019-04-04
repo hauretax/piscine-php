@@ -45,7 +45,7 @@ $uf->absorb(new Footsoldier());
 $uf->absorb(new Archer());
 $uf->absorb(new Assassin());
 $uf->absorb(new Llama());
-/*
+
 $requested_fighters = Array(
 	"foot soldier",
 	"llama",
@@ -74,4 +74,3 @@ foreach ($actual_fighters as $f) {
 		$f->fight($t);
 	}
 }
-*/
