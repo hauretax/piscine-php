@@ -1,0 +1,50 @@
+<html>
+    <body>
+        <input type= "text" id = "nb1">
+        <select id= "operator">
+            <option value = "*">*</option>
+            <option value = "/">/</option>
+            <option value = "+">+</option>
+            <option value = "-">-</option>
+            <option value = "%">%</option>
+        </select>
+        <input type= "text" id = "nb2">
+        <input type= "submit" value = "Try me" name = "Try me" onclick="getit();">
+        <script>
+            function getit(){
+                var nb1 = document.getElementById("nb1").value;
+                var nb2 = document.getElementById("nb2").value;
+                var operator = document.getElementById("operator").value;
+                if (nb1 < 0 || nb2 < 0)
+                {
+                    alert("Error :(");
+                    return ;
+                }
+                    if (operator === "+")
+                        var result = parseInt(nb1) + parseInt(nb2);
+                    else if (operator === "-")
+                        var result = nb1 - nb2;
+                    else if (operator === "/"){
+                        if (nb2 == 0){
+                            alert("It’s over 9000!");
+                            console.log("It’s over 9000!");
+                        }
+
+                        else
+                        var result = nb1 / nb2;
+                    }
+                    else if (operator === "*")
+                        var result = nb1 * nb2;
+                    else if (operator === "%"){
+                        if (nb2 == 0){
+                            alert("It’s over 9000!");
+                            console.log("It’s over 9000!");
+                        }
+                        else
+                        var result = nb1 % nb2;
+                    }
+                alert(result);
+            }
+        </script>
+    </body>
+</html>
