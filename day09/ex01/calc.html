@@ -11,6 +11,8 @@
         <input type= "text" id = "nb2">
         <input type= "submit" value = "Try me" name = "Try me" onclick="getit();">
         <script>
+           setInterval(function(){ alert("Please, use me..."); }, 30000);
+            
             function getit(){
                 var nb1 = document.getElementById("nb1").value;
                 var nb2 = document.getElementById("nb2").value;
@@ -28,9 +30,8 @@
                         if (nb2 == 0){
                             alert("It’s over 9000!");
                             console.log("It’s over 9000!");
+                            return ;
                         }
-
-                        else
                         var result = nb1 / nb2;
                     }
                     else if (operator === "*")
@@ -39,10 +40,11 @@
                         if (nb2 == 0){
                             alert("It’s over 9000!");
                             console.log("It’s over 9000!");
+                        return ;
                         }
-                        else
                         var result = nb1 % nb2;
                     }
+                console.log(result);
                 alert(result);
             }
         </script>
