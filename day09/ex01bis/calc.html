@@ -1,4 +1,7 @@
 <html>
+        <head>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            </head>
     <body>
         <input type= "text" id = "nb1">
         <select id= "operator">
@@ -9,15 +12,23 @@
             <option value = "%">%</option>
         </select>
         <input type= "text" id = "nb2">
-        <input type= "submit" value = "Try me" name = "Try me" onclick="getit();">
+        <input type= "submit" value = "Try me" name = "Try me" id ="submit">
         <script>
+            $(document).ready(function(){
+                $('#submit').click(function(){
+                    var nb1 = ('#nb1').val();
+                    var nb2 = ('#anb2').val();
+                    alert (nb1);
+                })
+            })
+            /*
            setInterval(function(){ alert("Please, use me..."); }, 30000);
             
             function getit(){
                 var nb1 = document.getElementById("nb1").value;
                 var nb2 = document.getElementById("nb2").value;
                 var operator = document.getElementById("operator").value;
-                if (nb1 < 0 || nb2 < 0 || nb1 % 1 || nb2 % 1 || isNaN(nb1) || isNaN(nb2))
+                if (nb1 < 0 || nb2 < 0)
                 {
                     alert("Error :(");
                     return ;
@@ -46,7 +57,7 @@
                     }
                 console.log(result);
                 alert(result);
-            }
+            }*/
         </script>
     </body>
 </html>
