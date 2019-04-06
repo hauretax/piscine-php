@@ -1,0 +1,54 @@
+<!doctype html>
+
+<style>
+    div {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+</style>
+
+    <html>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </head>
+        <body>
+                <div id='ballon' onclick="size+=10; change_size(); rotate_color();" onmouseout="outtodiv();">
+                      
+                      
+                      
+        <script>
+            $(document).ready(function(){
+              var color = ['red', 'green', 'blue'];
+              var i = 0;
+              $('#ballon').click(function(){
+                $('#ballon').css("height", "+=10");
+                $('#ballon').css("width", "+=10");
+                if ($('#ballon').width() > 420){
+                    $('#ballon').width(200);
+                    $('#ballon').height(200);
+                }
+                i++;
+                if (i == 3)
+                    i = 0;
+                $('#ballon').css("background-color", color[i]);
+              })
+              $('#ballon').mouseout(function(){
+                  $('#ballon').css("width", "-=5");
+                  $('#ballon').css("height", "-=5");
+                if ($('#ballon').width() < 200)
+                {
+                    $('#ballon').width(200);
+                    $('#ballon').height(200);
+                }
+                i--;
+                if (i == -1)
+                    i = 2;
+                $('#ballon').css("background-color", color[i]);
+              })
+            })
+
+            </script>
+</body>
+</html>
